@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@font-face {
+    font-family: titulo;
+    src: url(fontes/idroid.otf);
+
+}
+@font-face {
+    font-family:corpo ;
+    src: url(fontes/corpo.otf);
+}
+body{
+    font-family: sans-serif ;
+    background-color: #84E1AD;
+    margin: 0px;
+    padding: 0px;
+    
+}
+    
+    
+h1, h2 {
+    color: #286644;
+    font-family: "titulo", Arial, Helvetica, sans-serif;
+}
+h2{
+    background-image: linear-gradient(to right, #39735261, #72a6894d,#dcf2e446, #e3f5ea4c, #ffffff4f  );
+}
+header > h1{
+    color: white;
+    text-align: center;
+    
+}
+p{
+    padding: 5px;
+    margin: 5px, ;
+    
+}
+.centro{
+    text-align: center;
+    padding: 13px;
+}
+header{
+    background-image: linear-gradient(to bottom, #37C777,#2FAA65,#288E55,#207144, #1A5C37);
+    color: white;
+    padding: 20px;
+}
+nav > a{
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 21px 21px 21px 21px;
+    margin: 2px 2px 0px 2px;
+    
+    
+}
+a:hover{
+    background-color: white ;
+    color: #207144;
+    
+}
+main{
+    width: 750px;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+footer{
+    background-color: #1A5C38;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.lista{
+    text-align: justify;
+    background-color: #C5EBD6;
+    padding: 0px 10px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+   
+}
+.tlista{
+   background-color:#2FA866 ;
+   padding: 10px;
+   margin: 0px;
+   border-radius: 10px 10px 0px 0px ;
+   font-family: sans-serif, Arial, Helvetica;
+   color: white;
+}
+.paragrafolista{
+    margin-top: 0px;
+}
+.negrito{
+    font-weight: bold;
+}
+.negrito2{
+    color: #207144;
+    font-weight: bold;
+
+}
+.negrito3{
+    color: #207144;
+    font-weight: bold;
+    text-decoration: none;
+}
+picture{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    list-style: "";
+   }
+li::before{
+    content: "✔";
+    margin-right: 10px;
+}
+.lista2{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+   
+}
