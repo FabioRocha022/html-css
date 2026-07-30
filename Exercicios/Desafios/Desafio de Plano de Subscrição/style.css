@@ -19,6 +19,9 @@ header{
     text-decoration: none;
     max-width: 100px;
     padding: 5px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
     
 }
 .login:hover{
@@ -26,7 +29,7 @@ header{
 }
 html, body{
     background-color: black;
-    background-image: url(imagens/netflix.jpg);
+    background-image: url(assets/images/netflix.jpg);
     background-attachment: fixed;
     margin: 0px;
     padding: 0px;
@@ -65,6 +68,15 @@ div{
     color: white;
     text-align: center;
     border-radius: 10px;
+    cursor: pointer;
+    width: 80vh;
+    min-height: 50px;
+    font-size: 1.2em;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 .botao:hover{
     background-color: white;
