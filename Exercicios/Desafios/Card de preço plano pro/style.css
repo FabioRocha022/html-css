@@ -41,6 +41,63 @@ html, body{
     background-color: black;
     padding: 0px;
     border-radius: 20px;
+}
+article {
+    max-width: 600px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    padding:0px 10px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+div{
+    padding: 20px;
+}
+.premium {
+    background-image: linear-gradient(135deg, #1E519D, #752B69, #DA0D1D );
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 14px;
+}
+.botao{
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.botao:hover{
+    background-color: white;
+    color: red;
+}
+.botao a{
+    text-decoration: none;
+    color: white;
+}
+.vermelho{
+    color: #E20914;
+    font-weight: bolder;
+}
+.negrito{
+    font-weight: bolder;
+}
+.populares{
+    background-color: red;
+    color: white;
+    padding: 0.3em;
+    font-weight: bolder;
+    font-size: 0.8em;
+    text-align: center;
+    max-width: 610px;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+.netflix{
+    height: auto;
+    max-width: 180px;
+    margin-left: 150px;
+    margin-top: 10px
+}
 footer{
     background-color: black;
     color: white;
