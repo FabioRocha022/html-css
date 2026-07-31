@@ -19,13 +19,14 @@ header{
     text-decoration: none;
     max-width: 100px;
     padding: 5px;
-    display: flex;
+    display: inline-block;
+    float: right;
     align-items: right;
-    justify-content: right;
-    
+    justify-content: flex-end;
 }
 .login:hover{
     background: rgba(31, 30, 30, 0.539);
+    text-decoration: underline;
 }
 html, body{
     background-color: black;
@@ -108,7 +109,8 @@ div{
     height: auto;
     max-width: 180px;
     margin-left: 150px;
-    margin-top: 10px
+    margin-top: 10px;
+    display: inline;
 }
 footer{
     background-color: black;
