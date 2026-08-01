@@ -11,7 +11,23 @@
         }
         table{
             border-collapse: collapse;
-            width: 600px;
+            max-width: 600px;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+        thead tr th{
+            position: sticky;
+            top: 0;
+            background-color:#EAECF0 ;
+        }
+        tbody tr:nth-last-child(2n){
+            background-color: lightgray;
         }
         td, th{
             border: 1px solid black;
@@ -28,10 +44,13 @@
 <body>
     <h1>Tabelas grandes</h1>
     <table>
+        <caption>
+            População Distrital
+        </caption>
         <thead>
             <tr>
-                <th>Distrito</th>
-                <th>População</th>
+                <th scope="col">Distrito</th>
+                <th style="width: 50px;" scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -90,7 +109,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>10 749 635</strong></td>
             </tr>
         </tfoot>
