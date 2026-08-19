@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    width:100% ;
+    height: 100%;
+    color: white;
+}
+
+header{
+    color: white;
+    background-color: black;
+}
+
+header h1{
+    padding: 20px;
+}
+
+main{
+    display: flex;
+    background-image: linear-gradient(to bottom right, #800080, #A90072, #D50048, #FF0000);
+    width: 100%;
+    height: 100%;
+}
+
+form{
+    display: flex;
+    margin: auto;
+    padding: 30px;
+    width: 600px;
+    border-radius: 20px;
+    border: 1px solid white;
+    flex-direction: column;
+    color: white;
+}
+
+form h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+label, input{
+    margin: 10px;
+    display: block;
+    background: transparent;
+    color: white;
+}
+
+input.parametros{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+input#data{
+    display: inline-block;
+}
+
+input#icheck{
+    display: inline;
+    margin: 0px;
+}
+
+input#iseguinte{
+    border-radius: 10px;
+    height: 40px;
+    font-size: 1.1em;
+    border: 1px solid white;
+}
+
+label.ccheck{
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+label.ccheck a{
+    color: white;
+    font-weight: bolder;
+}
+
+.criarconta{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.criarconta a{
+    color: white;
+    font-weight: bolder;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a{
+    font-weight: bolder;
+    text-decoration: none;
+}

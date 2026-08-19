@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="assets/estilos/style02.css">
+</head>
+<body>
+        <header>
+        <h1>Teste de Formulários</h1>
+    </header>
+    <main>
+        <form action="cadastro.php">
+            <h1>Criar Conta</h1>
+            <label for="inome">Nome do Usuário
+                <input class="parametros" type="text" name="inome" id="inome" required placeholder="Nome do Usuário" minlength="8" maxlength="20" >
+            </label>
+            <label for="idata">Data de Nascimento
+                <input type="date" name="idata" id="idata" required  placeholder="Data de Nascimento">
+            </label>
+
+            <label for="inumero"> Telefone
+                <input type="number" name="inumero" id="inumero" required placeholder="Insira também o prefixo de telefone">
+            </label>
+
+            <label for="iemail"> Email
+                <input type="email" name="iemail" id="iemal" required placeholder="Escreva seu email">
+            </label>
+            
+            <label for="isenha"> Nova Senha
+                <input class="parametros" type="password" name="isenha" id="isenha" required placeholder="Senha">
+            </label>
+            <label class="ccheck" for="icheck">
+                <input type="checkbox" name="icheck" id="icheck"required >
+                Li e aceito os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a>
+            </label>
+            <input type="submit" value="Seguinte" id="iseguinte">
+            <span class="criarconta">Não tem uma conta? <a href=""> Criar uma conta</a></span>
+        </form>
+    </main>
+    <footer>
+        <span>Site criado por <a href="">Fábio Rocha</a></span>
+    </footer>
+</body>
+</html>
