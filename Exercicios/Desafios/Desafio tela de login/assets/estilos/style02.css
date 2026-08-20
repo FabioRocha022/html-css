@@ -1,5 +1,24 @@
 @charset "UTF-8";
 
+@media (max-width: 620px){
+    form{
+        width: 400px;
+    }
+    
+    input.parametros{
+        width: 350px;
+        justify-self: center;
+    }
+}
+
+@media (min-width: 620px) {
+    input.parametros{
+        width: 500px;
+        justify-self: center;
+    }
+}
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -27,7 +46,7 @@ main{
     display: flex;
     background-image: linear-gradient(to bottom right, #800080, #A90072, #D50048, #FF0000);
     width: 100%;
-    height: 100%;
+    padding: 20px;
 }
 
 form{
@@ -50,9 +69,13 @@ form h1{
 
 label, input{
     margin: 10px;
-    display: block;
     background: transparent;
     color: white;
+}
+
+input{
+     display: block;
+     outline: 1px solid white;
 }
 
 input.parametros{
@@ -61,8 +84,8 @@ input.parametros{
     border: 1px solid white;
 }
 
-input#data{
-    display: inline-block;
+label.inline{
+    display: inline;
 }
 
 input#icheck{
@@ -102,6 +125,7 @@ footer{
     color: white;
     padding: 10px;
     text-align: center;
+    display: fixed;
 }
 
 footer a{
