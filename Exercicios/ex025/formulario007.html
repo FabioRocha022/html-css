@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php
+    " method="post">
+
+    <div>
+        <label for="idistrito">Distrito</label>
+        <select name="distrito" id="idistrito">
+            <optgroup label="Distritos Norte">
+                <option value="norte">Porto</option>
+                <option value="norte">Aveiro</option>
+            </optgroup>
+            <optgroup label="Distritos Sul">
+                <option value="sul">Lisboa</option>
+                <option value="sul">Faro</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="iptof" id="iprof" list="list">
+        <datalist id="list">
+            <option value="DEV">Desenvolvedor</option>
+            <option value="PROF">Professor</option>
+            <option value="CHEF">Cozinheiro</option>
+            <option value="ADM">Adminstrador</option>
+        </datalist>
+    </div>
+
+    <div>
+        <input type="submit" value="Enviar"> 
+        <input type="reset" value="Limpar">
+    </div>
+</body>
+</html>
