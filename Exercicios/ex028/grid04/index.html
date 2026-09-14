@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        main.container {
+            border: 2px solid red;
+            height: 250px;
+
+            grid-template: repeat(3, auto) / repeat(3,auto);
+            display: grid;
+            place-items: start center;
+            place-content: space-between end;
+            gap: 5px;
+        }
+        section.item {
+            border:  2px solid blue;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="item">A</section>
+        <section class="item">B</section>
+        <section class="item">C</section>
+        <section class="item">D</section>
+        <section class="item">E</section>
+        <section class="item">F</section>
+        <section class="item">G</section>
+    </main>
+</body>
+</html>
