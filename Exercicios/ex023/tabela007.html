@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de preços</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=check,close&display=block" />
+    
     <style>
         * {
             padding: 0px;
@@ -15,9 +17,7 @@
         body {
             width: 100%;
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: antiquewhite;
         }
 
         table{
@@ -25,59 +25,84 @@
             border-collapse: collapse;
             border-radius: 5px;
         }
+        div {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-        td, th {
+        tr:nth-last-child(2n) {
+            background-color: rgb(213, 193, 164);
+        }
+
+        tbody th {
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.988);
+        }
+
+        tbody td {
             border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.4em;
+            font-weight: bolder;
             padding: 10px;
         }
 
     </style>
 </head>
 <body>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="row">Plano</th>
-                    <td>Start</td>
-                    <td>Plus</td>
-                    <td>Ultimate</td>
-                </tr>
-                <tr>
-                    <th>Preço</th>
-                    <td>25.99€</td>
-                    <td>35.99€</td>
-                    <td>45.99€</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Disk Space</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>Bandwidth</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>DataBae</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>Support</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-            <tfoot>
-
-            </tfoot>
-        </table>
+        <div>
+            <table>
+                <thead>
+                    <caption>Comparação de preços</caption>
+                    <tr>
+                        <th scope="row">Plano</th>
+                        <td>Start</td>
+                        <td>Plus</td>
+                        <td>Ultimate</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Preço</th>
+                        <td>25.99€</td>
+                        <td>35.99€</td>
+                        <td>45.99€</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Disk Space</th>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bandwidth</th>
+                        <td><span class="material-symbols-outlined">close</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">DataBae</th>
+                        <td><span class="material-symbols-outlined">close</span></td>
+                        <td><span class="material-symbols-outlined">close</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Support</th>
+                        <td><span class="material-symbols-outlined">close</span></td>
+                        <td><span class="material-symbols-outlined">close</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+        </div>
 </body>
 </html>
